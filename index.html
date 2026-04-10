@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>StarCasino — Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- Шапка с балансом -->
+        <div class="header" id="header">
+            <div class="balance-box" id="balanceBox">
+                <span class="stars-icon">⭐</span>
+                <span id="balanceValue">0</span>
+            </div>
+            <div class="level-badge" id="levelBadge">
+                <span>🎖️ Уровень 1</span>
+            </div>
+        </div>
+        
+        <!-- Динамический контент -->
+        <div id="dynamicContent" class="main-content"></div>
+        
+        <!-- Нижняя навигация -->
+        <div class="bottom-nav" id="bottomNav">
+            <div class="nav-item" data-nav="solo">
+                <span class="nav-icon">🎮</span>
+                <span class="nav-label">Соло</span>
+            </div>
+            <div class="nav-item" data-nav="pvp">
+                <span class="nav-icon">⚔️</span>
+                <span class="nav-label">ПВП</span>
+            </div>
+            <div class="nav-item" data-nav="giveaways">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-label">Розыгрыши</span>
+            </div>
+            <div class="nav-item" data-nav="shop">
+                <span class="nav-icon">🛒</span>
+                <span class="nav-label">Магазин</span>
+            </div>
+            <div class="nav-item" data-nav="profile">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Профиль</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="app.js"></script>
+    <script src="games.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
